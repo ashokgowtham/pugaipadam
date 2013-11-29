@@ -166,7 +166,9 @@ header ul a:hover{
 
 .empData{
 	float:left;
-	margin:5px;	
+	margin:5px;
+    position: relative;
+    overflow: hidden;
 }
 
 .empPhoto{
@@ -184,8 +186,18 @@ header ul a:hover{
 	position:absolute;
 	margin-top:-49px;
 	border-top: 1px solid #000;
-	display:none;
+	/*display:none;*/
+    bottom:-50px;
+    -moz-transition-duration:.2s;
+    -webkit-transition-duration:.2s;
+    -o-transition-duration:.2s;
+    transition-duration:.2s;
 }
+
+.empData:hover>.empSlideData {
+    bottom:0px;
+}
+
 .empSlideData span{
 	display:block;
 	padding:0px 5px 5px;	

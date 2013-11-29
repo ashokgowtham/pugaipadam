@@ -121,11 +121,11 @@ $(function(){
 				$("#employeeDetails").append(empSlideData).hide().slideDown("fast");
 				
 				$(".empData").unbind('click').bind("mouseenter", function(){
-					showSlideData.apply(this);
+				//	showSlideData.apply(this);
 				});
 				
 				$(".empData").bind("mouseleave", function(){
-					hideSlideData.apply(this);
+				//	hideSlideData.apply(this);
 				});
 				
 				$(".empData").bind("click", function(event){
